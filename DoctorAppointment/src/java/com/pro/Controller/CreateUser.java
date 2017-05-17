@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Akshay
+ * @author Ak
  */
 public class CreateUser extends HttpServlet {
 
