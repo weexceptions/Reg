@@ -231,46 +231,44 @@ var regAdd = /^(?=.*\d)[a-zA-Z\s\d\/]+$/;
 
             <div class="form-group">
                 <label for="email"><span class="req">* </span> Email Address: </label> 
-                    <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />   
+                    <input class="form-control" required type="text" name="txtemail" id = "email"  onchange="email_validate(this.value);" />   
                         <div class="status" id="status"></div>
             </div>
-
-            <div class="form-group">
-                <label for="username"><span class="req">* </span> User name:  <small>This will be your login user name</small> </label> 
-                    <input class="form-control" type="text" name="username" id = "txt" onkeyup = "Validate(this)" placeholder="minimum 6 letters" required />  
-                        <div id="errLast"></div>
-            </div>
-
+            
             <div class="form-group">
                 <label for="password"><span class="req">* </span> Password: </label>
-                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
+                    <input required name="txtpass" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
 
                 <label for="password"><span class="req">* </span> Password Confirm: </label>
-                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
+                    <input required name="txtpass2" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
                         <span id="confirmMessage" class="confirmMessage"></span>
             </div>
+            
+            <div class="form-group">
+            <label for="address"><span class="req">* </span> Address: </label>
+            <textarea required type="text" rows="4" cols="50" name="txtaddress" id="phone" class="form-control phone" maxlength="100"  placeholder="Address"></textarea> 
+            </div>
+            
             <div class="form-group">
             <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
-                    <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="Contact number"/> 
+                    <input required type="text" name="txtphone" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="Contact number"/> 
             </div>
                 <div class="form-group">
                     
             <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                <input type="radio" name="txtsex" id="inlineCheckbox1" value="male" />
                 Male
             </label>
             <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                <input type="radio" name="txtsex" id="inlineCheckbox2" value="female" />
                 Female
             </label>
                 </div>
 
-
-            <div class="form-group">
             
-                <?php //$date_entered = date('m/d/Y H:i:s'); ?>
-                <input type="hidden" value="<?php //echo $date_entered; ?>" name="dateregistered">
-                <input type="hidden" value="0" name="activate" />
+            <div class="form-group">
+            <label for="password"><span class="req">* </span>Date of Birth: </label>
+                <input type="date" name="txtdob">
                 <hr>
                 
 
