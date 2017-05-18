@@ -21,12 +21,12 @@
             
         </style>
     </head>
-    <body><div  id="heading" class="container-fluid">
+    <body class=""><div  id="heading" class="container-fluid">
         <h1>
             List OF Doctors:
         </h1></div>
-        <div class="container-fluid" width="29%" height="500">
-            <marquee  direction="up" scrollamount="10" loop="true" onmouseover="this.stop()" onmouseout="this.start()">
+        <div class="container-fluid" >
+            <marquee  direction="up" width="100%" height="300" scrollamount="10" loop="true" onmouseover="this.stop()" onmouseout="this.start()">
         <div class="col-lg-12 col-sm-12">
        
         <h1 align="center">Cosmetic Surgeon</h1>
@@ -54,5 +54,17 @@
         </div>
     </marquee>
             </div>
+        <div class="container-fluid" >
+            <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
+            <legend><i class="glyphicon glyphicon-globe"></i>LogIn!</legend>
+            <form action="createuser.do"  method="post" class="form" role="form">
+            <div class="row">
+    
+            </div>
+            </form>
+        </div>
+            </div>
+        </div>
     </body>
 </html>
