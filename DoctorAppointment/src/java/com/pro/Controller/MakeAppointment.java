@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Akshay
+ * @author akshay
  */
 public class MakeAppointment extends HttpServlet {
 

@@ -42,19 +42,19 @@ function clearField() {
         <br style="clear:both">
         <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
         	<div class="form-group">
-        	<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+        	<input type="text" class="form-control" id="name" name="txtname" placeholder="Name" required>
                 </div>
 		<div class="form-group">
-        		<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+        		<input type="text" class="form-control" id="email" name="txtemail" placeholder="Email" required>
         	</div>
 		<div class="form-group">
-                	<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                	<input type="text" class="form-control" id="mobile" name="txtmobile" placeholder="Mobile Number" required>
 		</div>
 		<div class="form-group">
-			<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+			<input type="text" class="form-control" id="subject" name="txtsubject" placeholder="Subject" required>
 		</div>
                 <div class="form-group">
-                    <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                    <textarea class="form-control" type="textarea" id="message" name="txtmessage" placeholder="Message" maxlength="140" rows="7"></textarea>
                         <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
                 </div>
             
