@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/homestylesheet.css">
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-       
+        <script type="text/javascript" src="js/login.js"></script>
         <style>
             #heading
             {
@@ -34,23 +34,25 @@
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
             <legend><i class="glyphicon glyphicon-globe"></i>LogIn!</legend>
             <form action=""  method="post" class="form" role="form">
+                <a href="left.jsp"></a>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-4">
                     <label class="text-info">User Id:</label>      
                 </div>
-                <div class="col-lg-8"><input class="i" type="text" placeholder="userid" name="uid" required ></div>
+                <div class="col-lg-8 col-sm-8"><input class="form-control" type="text" placeholder="userid" name="uid" required ></div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-4">
                     <label class="text-info">Password:</label>      
                 </div>
-                <div class="col-lg-8"><input type="password" placeholder="password" name="txtpass" required ></div>
+                <div class="col-lg-8 col-sm-8"><input type="password" class="form-control" placeholder="password" name="txtpass" required ></div>
             </div>
                 
             <div class="row">
-                <div class="col-lg-12">
-                    <button class="btn-success"><center>Submit</center></button>      
+                <div class="col-lg-12 col-sm-12">
+                    <center><button type="button" class="btn btn-primary">Submit</button></center>      
                 </div>
+                <center> <a class="text-primary" href="signup.jsp"  target="ContentFrame" >Register</a>. <a href="#">Forget Password</a></center>
             </div>
             </form>
         </div>
@@ -62,7 +64,7 @@
                     List of Doctors:</center>
         </h1></div>
         <div class="container-fluid" >
-            <marquee  direction="up" width="100%" height="400" scrollamount="10" loop="true" onmouseover="this.stop()" onmouseout="this.start()">
+            <marquee  direction="up" width="100%" height="400" scrollamount="5" loop="true" onmouseover="this.stop()" onmouseout="this.start()">
         <div class="col-lg-12 col-sm-12">
        
         <h3 align="center">Cosmetic Surgeon</h3>

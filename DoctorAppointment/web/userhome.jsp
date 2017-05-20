@@ -62,8 +62,8 @@ body{
          
       </div>
       <div id="navbar3" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="home.jsp" target="ContentFrame">Home</a></li>
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a href="#" target="ContentFrame">Home</a></li>
           <li><a href="#" target="ContentFrame" >Notification</a></li>
           <li><a  href="#" target="ContentFrame">Make Appointment</a></li>
           <li class="dropdown">
@@ -83,7 +83,7 @@ body{
   </nav>
             </div>
             <div class="row" id="container">
-            <IFRAME seamless="seamless" scrolling="no" src="left.jsp" id="frame1" scrollig="no" name="NavigationFrame" width="29%" height="800" > </IFRAME>
+            <IFRAME seamless="seamless" scrolling="no" src="" id="frame1" scrollig="no" name="NavigationFrame" width="29%" height="800" > </IFRAME>
             <IFRAME seamless="seamless" scrolling="yes" src="home.jsp" id="frame2" name="ContentFrame" width="70%" height="800" ><h1>Content</h1></IFRAME>
             </div>
             
@@ -93,7 +93,7 @@ body{
     <div class="col-lg-12 text-danger text-center text-muted">
     <p class="pull-right">
     <a href="#">Back to top</a></p>
-        <p>
+        <p> 
             &copy; 2017 &middot; StayHealthy &middot; <a target="ContentFrame" href="privacypolicy.htm">Privacy</a> &middot; <a href="#">Terms</a>
         </p>
     </div>
