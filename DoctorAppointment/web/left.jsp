@@ -9,7 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>LEFT Page</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/homestylesheet.css">
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+       
         <style>
             #heading
             {
@@ -21,31 +27,61 @@
             
         </style>
     </head>
-    <body class=""><div  id="heading" class="container-fluid">
-        <h1>
-            List OF Doctors:
+    <body>
+        
+        <div class="container" >
+            <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
+            <legend><i class="glyphicon glyphicon-globe"></i>LogIn!</legend>
+            <form action=""  method="post" class="form" role="form">
+            <div class="row">
+                <div class="col-lg-4">
+                    <label class="text-info">User Id:</label>      
+                </div>
+                <div class="col-lg-8"><input class="i" type="text" placeholder="userid" name="uid" required ></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <label class="text-info">Password:</label>      
+                </div>
+                <div class="col-lg-8"><input type="password" placeholder="password" name="txtpass" required ></div>
+            </div>
+                
+            <div class="row">
+                <div class="col-lg-12">
+                    <button class="btn-success"><center>Submit</center></button>      
+                </div>
+            </div>
+            </form>
+        </div>
+            </div>
+        </div>
+        
+        <div  id="heading" class="container-fluid">
+            <h1><center>
+                    List of Doctors:</center>
         </h1></div>
         <div class="container-fluid" >
-            <marquee  direction="up" width="100%" height="300" scrollamount="10" loop="true" onmouseover="this.stop()" onmouseout="this.start()">
+            <marquee  direction="up" width="100%" height="400" scrollamount="10" loop="true" onmouseover="this.stop()" onmouseout="this.start()">
         <div class="col-lg-12 col-sm-12">
        
-        <h1 align="center">Cosmetic Surgeon</h1>
-        <h4 align="center" class="">
+        <h3 align="center">Cosmetic Surgeon</h3>
+        <h4 align="center" class="text-justify">
            Dr. Aamod Rao(Plastic Surgery)<br/><br/>
            Dr. Kapil Agrawal(Aesthetic Plastic Surgery)<br/><br/>
-           Dr. Milind Wagh<br/><br/>
-           Dr. Gautam Datta<br/><br/>
+           Dr. Milind Wagh(Plastic Surgeon)<br/><br/>
+           Dr. Gautam Datta(Cardiologists)<br/><br/>
         </h4>
-        <h1 align="center">Dental Procedures</h1>
-        <h4 align="center">
+        <h3 align="center">Dental Procedures</h3>
+        <h4 align="center" class="text-justify" >
            Dr. Ashni Choksey(Cosmetic Dentist)<br/><br/>
-           Dr. Gaurav Walia(Endodontist & Dental Surgeon)<br/><br/>
-           Dr. Suchetan Pradhan(Laser and Implant Dentist)<br/><br/>
+           Dr. Gaurav Walia(Dental Surgeon)<br/><br/>
+           Dr. Suchetan Pradhan(Implant Dentist)<br/><br/>
            Dr. Vinod Naraynan(Dental Implant)<br/><br/>
         </h4>
-        <h1 align="center">Gynecology</h1>
-          <h4 align="center">
-           Dr. Pranay R. Shah(Endoscopic surgery)<br/><br/>
+        <h3 align="center">Gynecology</h3>
+          <h4 align="center" class="text-justify">
+           Dr. Pranay R.Shah(Endoscopic surgery)<br/><br/>
            Dr. Laila Dave(OBSTETRICS)<br/><br/>
            Dr. Gautam Datta(Urogynecology)<br/><br/>
            Dr. Sohel Ali(Laparoscopic)<br/><br/>
@@ -54,17 +90,5 @@
         </div>
     </marquee>
             </div>
-        <div class="container-fluid" >
-            <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
-            <legend><i class="glyphicon glyphicon-globe"></i>LogIn!</legend>
-            <form action="createuser.do"  method="post" class="form" role="form">
-            <div class="row">
-    
-            </div>
-            </form>
-        </div>
-            </div>
-        </div>
     </body>
 </html>
