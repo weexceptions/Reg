@@ -32,7 +32,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Qualified Doctors team.</h1>
-              <p>We are having such a good qualified and attentive doctor team they will never loose you down.</p>
+              <p>We are having such a good qualified and attentive doctor team they will never let you down.</p>
               <p><a class="btn btn-lg btn-primary" href="#"  role="button">Sign up today</a></p>
             </div>
           </div>
@@ -42,7 +42,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Child care.</h1>
-              <p>Our knowledgeable, experienced and friendly daycare doctor team totally take care of your child in hospital. </p>
+              <p>Our knowledgeable, experienced and friendly day care doctor team totally take care of your child in hospital. </p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
             </div>
           </div>
