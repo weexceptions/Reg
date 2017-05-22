@@ -5,8 +5,12 @@
  */
 package com.pro.Controller;
 
+import com.pro.dao.DBconnection;
+import com.pro.dao.UserDAO;
+import com.pro.dao.daoImpl;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -25,20 +29,29 @@ public class Login extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             System.out.println("Before");
             out.println("Failed to Create User ");
-            String uname = request.getParameter("uid");
+            String id = request.getParameter("txtuid");
             String pass = request.getParameter("txtpass");
+            //Test
              // if(true){
                 System.out.println("User Record Successfully Inserted");
-                RequestDispatcher rd = request.getRequestDispatcher("userhome.jsp");
-                request.setAttribute("auser", uname);
-                rd.forward(request, response);
+                System.out.println(id+"\n\n"+pass);
            // }
 //            else
 //            {
 //                System.out.println("Failed to create User Record");                
 //                out.println("Failed to Create User ");
-//            }  
-            
+//            } 
+            UserDAO userdao = new daoImpl();
+             if (userdao.getLogin(id, pass)) {
+                RequestDispatcher rd = request.getRequestDispatcher("userhome.jsp");
+                request.setAttribute("auser", id);
+                rd.forward(request, response);
+             }
+             else
+            {
+                System.out.println("Failed to create User Record");                
+                out.println("Failed to Create User ");
+            }  
         }
     }
 

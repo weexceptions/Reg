@@ -10,6 +10,9 @@ import com.sun.istack.internal.logging.Logger;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.logging.Level;
 
 /**
@@ -62,6 +65,37 @@ public class daoImpl implements UserDAO{
     boolean flag=false;
     //insert code to delete
         return flag;   
+    
+    }
+
+    @Override
+    public boolean getLogin(String id, String pass) {
+        boolean r=false;
+        id.toLowerCase();
+        pass.toLowerCase();
+        String sql =("Select fname,password from USERDETAIL ");
+        Statement statement=null;
+         ResultSet resultSet=null;
+        try {
+            statement = con.createStatement();
+           resultSet = statement.executeQuery(sql);
+            while (resultSet.next()){
+            String s1=resultSet.getString("fname");
+            String s2=resultSet.getString("password");
+            s1.toLowerCase();
+            s2.toLowerCase();
+            if(id==s1&&pass==s2){
+                System.out.println("Login pass**********");
+                r=true;
+                break;
+            }
+        }
+        } catch (SQLException ex) {
+            System.out.println("Exception ");
+             
+
+        }
+        return r;
     
     }
 
