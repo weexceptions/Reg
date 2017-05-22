@@ -7,6 +7,7 @@ package com.pro.Controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,28 +18,27 @@ import javax.servlet.http.HttpServletResponse;
  * @author Akshay
  */
 public class Login extends HttpServlet {
-
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            System.out.println("Before");
+            out.println("Failed to Create User ");
             String uname = request.getParameter("uid");
             String pass = request.getParameter("txtpass");
+             // if(true){
+                System.out.println("User Record Successfully Inserted");
+                RequestDispatcher rd = request.getRequestDispatcher("userhome.jsp");
+                request.setAttribute("auser", uname);
+                rd.forward(request, response);
+           // }
+//            else
+//            {
+//                System.out.println("Failed to create User Record");                
+//                out.println("Failed to Create User ");
+//            }  
             
-            
-            
-            
-
         }
     }
 
