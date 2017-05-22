@@ -33,7 +33,7 @@ public class Login extends HttpServlet {
             String pass = request.getParameter("txtpass");
             //Test
              // if(true){
-                System.out.println("User Record Successfully Inserted");
+                System.out.println("Userlogin Successfully");
                 System.out.println(id+"\n\n"+pass);
            // }
 //            else
