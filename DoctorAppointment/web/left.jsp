@@ -47,7 +47,8 @@
                 </div>
                 <div class="col-lg-8 col-sm-8"><input type="password" class="form-control" placeholder="password" name="txtpass" required ></div>
             </div>
-                
+                <br>
+               
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
                     <center><button type="button" class="btn btn-primary">LogIn</button></center>      

@@ -22,7 +22,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LoginSevelet</servlet-name>
-        <url-pattern>/Login</url-pattern>
+        <url-pattern>/login.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
