@@ -66,7 +66,7 @@ body{
           <li><a href="aboutus.jsp" target="ContentFrame" >About Us</a></li>
           <li><a  href="contactus.jsp" target="ContentFrame">Contact Us</a></li>
           <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help Desk<span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help Desk<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
                 <li><a target="ContentFrame" href="#">FAQs</a></li>
               <li><a target="ContentFrame" href="#">Enquiry Desk</a></li>

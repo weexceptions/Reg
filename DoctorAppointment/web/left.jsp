@@ -33,7 +33,7 @@
             <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
             <legend><i class="glyphicon glyphicon-globe"></i>LogIn!</legend>
-            <form action=""  method="post" class="form" role="form">
+            <form action="login.do"  method="post" class="form" role="form">
                 <a href="left.jsp"></a>
             <div class="row">
                 <div class="col-lg-4 col-sm-4">
@@ -50,7 +50,7 @@
                 
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
-                    <center><button type="button" class="btn btn-primary">Submit</button></center>      
+                    <center><button type="button" class="btn btn-primary">LogIn</button></center>      
                 </div>
                 <center> <a class="text-primary" href="signup.jsp"  target="ContentFrame" >Register</a>. <a href="#">Forget Password</a></center>
             </div>

@@ -18,14 +18,50 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <lable>Patient Id:</lable>
+            <form action="" method="" >
+                <div class="form-group">
+                    <input type="text" class="form-control" name="" placeholder="Patient Name" required>
                 </div>
-                <div class="col-lg-6 col-sm-6">
-                    <input  type="text" name="txtpatintid" placeholder="Enter Your ID">
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" name="" placeholder="Patient id" required>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label class="col-lg-3" for="sel1">Appointment Date:</label>
+                    <div class="col-lg-7"><input type="date" class="form-control" name="" placeholder="Date" required></div>
+                </div><br>
+                <div class="form-group">
+                    <label for="sel1">Appointment Time:</label>
+                    <input type="time" class="form-control" name="" placeholder="Time" required>
+                </div>    
+                <div class="form-group">
+                    <label for="sel1">Select Doctor:</label>
+                    <select class="form-control">
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        <option id="" value=""></option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="" class="form-control" value="" name="" placeholder="">
+                </div>
+                   
+            </form>
+            
         </div>
     </body>
 </html>
