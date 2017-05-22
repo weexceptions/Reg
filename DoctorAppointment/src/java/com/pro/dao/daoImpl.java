@@ -75,25 +75,30 @@ public class daoImpl implements UserDAO{
         pass.toLowerCase();
         String sql =("Select fname,password from USERDETAIL ");
         Statement statement=null;
-         ResultSet resultSet=null;
+        ResultSet resultSet=null;
+        String s1;
+        String s2;
         try {
             statement = con.createStatement();
            resultSet = statement.executeQuery(sql);
+          
             while (resultSet.next()){
-            String s1=resultSet.getString("fname");
-            String s2=resultSet.getString("password");
+            s1=resultSet.getString("fname");
+            s2=resultSet.getString("password");
+                System.out.println(s1+"*****---"+s2);
             s1.toLowerCase();
             s2.toLowerCase();
-            if(id==s1&&pass==s2){
+            if(id.equals(s1)&&pass.equals(s2)){
                 System.out.println("Login pass**********");
                 r=true;
                 break;
             }
+            else{
+                System.out.println("Not matchs");
+            }
         }
         } catch (SQLException ex) {
-            System.out.println("Exception ");
-             
-
+            System.out.println("Exception ");             
         }
         return r;
     
