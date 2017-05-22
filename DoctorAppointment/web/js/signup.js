@@ -49,6 +49,24 @@ function validatephone(phone)
 // validates text only
 function Validate(txt) {
     txt.value = txt.value.replace(/[^a-zA-Z-'\n\r.]+/g, '');
+    txt.value=txt.value.replace('\'','');
+    txt.value=txt.value.replace('\' \'','');
+    txt.value=txt.value.replace('\'\'\'','');
+    txt.value=txt.value.replace('\'\'\'\'','');
+    txt.value=txt.value.replace('\'\'\'\'\'','');
+    txt.value=txt.value.replace('\'\'\'\'\'\'','');
+    txt.value=txt.value.replace('\'\'\'\'\'\'\'','');
+    txt.value=txt.value.replace('\'\'\'\'\'\'\'\'\'\'\'','');
+    txt.value=txt.value.replace('\'\'\'\'\'\'\'\'\'\'\'\'\'\'\'\'\'\'\'','');
+    txt.value=txt.value.replace('\"','');
+    txt.value=txt.value.replace('\"\"','');
+    txt.value=txt.value.replace('\"\"\"','');
+    txt.value=txt.value.replace('\"\"\"\"','');
+    txt.value=txt.value.replace('\"\"\"\"\"','');
+    txt.value=txt.value.replace('\"\"\"\"\"\"','');
+    txt.value=txt.value.replace('\"\"\"\"\"\"\"','');
+    txt.value=txt.value.replace('\"\"\"\"\"\"\"\"\"\"\"','');
+    txt.value=txt.value.replace('\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"','');
 }
 // validate email
 function email_validate(email)
