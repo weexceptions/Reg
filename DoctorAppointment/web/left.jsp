@@ -39,13 +39,13 @@
                 <div class="col-lg-4 col-sm-4">
                     <label class="text-info">User Id:</label>      
                 </div>
-                <div class="col-lg-8 col-sm-8"><input class="form-control" type="text" placeholder="userid" name="txtuid" required ></div>
+                <div class="col-lg-8 col-sm-8"><input class="form-control" type="text" placeholder="userid" name="txtuid" id="txt" onkeyup = "Validate(this)" required ></div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-4">
                     <label class="text-info">Password:</label>      
                 </div>
-                <div class="col-lg-8 col-sm-8"><input type="password" class="form-control" placeholder="password" name="txtpass" required ></div>
+                <div class="col-lg-8 col-sm-8"><input type="password" class="form-control" name="txtpass" minlength="4" maxlength="16" placeholder="Enter Password" onkeyup="checkPass(); return false;" required ></div>
             </div>
                 <br>
                
@@ -53,6 +53,7 @@
                 <div class="col-lg-12 col-sm-12">
                     <center><button type="submit" class="btn btn-primary">LogIn</button></center>      
                 </div>
+                <br/>
                 <center> <a class="text-primary" href="signup.jsp"  target="ContentFrame" >Register</a>. <a href="#">Forget Password</a></center>
             </div>
             </form>

@@ -5,7 +5,7 @@
  */
 
 
-    function checkPass()
+function checkPass()
 {
     //Store the password field objects into variables ...
     var pass1 = document.getElementById('pass1');
