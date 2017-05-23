@@ -68,56 +68,6 @@
       </a>
     </div><!-- /.carousel -->
 
-        
-        
-        <!-- Signup form -->
-    <!--
-        <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
-            <legend><i class="glyphicon glyphicon-globe"></i>Sign up!</legend>
-            <form action="createuser.do"  method="post" class="form" role="form">
-            <div class="row">
-                <div class="col-xs-6 col-md-6">
-                    <input class="form-control" name="txtfname" placeholder="First Name" type="text"
-                        required autofocus />
-                </div>
-                <div class="col-xs-6 col-md-6">
-                    <input class="form-control" name="txtlname" placeholder="Last Name" type="text" required />
-                </div>
-            </div>
-            <input class="form-control" name="txtemail" placeholder="Your Email" type="email" />
-            <input class="form-control" name="txtpass" placeholder="Password" type="password" />
-            <input class="form-control" name="txtpass" placeholder="Re-enter Password" type="password" />
-            <input class="form-control" name="txtaddress" placeholder="Address" type="text" required autofocus />
-            <input class="form-control" name="txtphone" placeholder="Phone" type="text" required autofocus />
-                
-            <div class="row">
-                <div class="form-group">
-                    <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
-                    <div class="col-sm-9">
-                        <input type="date" name="txtdob" id="birthDate" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
-                Male
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
-                Female
-            </label>
-            <br />
-            <br />
-            <button class="btn btn-lg btn-primary btn-block" type="submit" value="Sign Up">
-                Sign up</button>
-            </form>
-        </div>
-    </div>
-</div>
--->
-
         <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">

@@ -10,33 +10,43 @@ package com.pro.Model;
  * @author Akshay
  */
 public class Patient  {
-    private int userId;
-    private String password;
-    private String diseaseName;
+    private String patientId;
+    private String ageGroup;
+    private String gender;
 
+    public Patient(String patientId, String ageGroup, String gender) {
+        this.patientId = patientId;
+        this.ageGroup = ageGroup;
+        this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" + "patientId=" + patientId + ", ageGroup=" + ageGroup + ", gender=" + gender + '}';
+    }
+
+    public String getPatientId() {
+        return patientId;
+    }
+
+    public void setPatientId(String patientId) {
+        this.patientId = patientId;
+    }
+
+    public String getAgeGroup() {
+        return ageGroup;
+    }
+
+    public void setAgeGroup(String ageGroup) {
+        this.ageGroup = ageGroup;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
     
-    public String getPassword() {
-        return password;
-    }
-
-    /**
-     * @param password the password to set
-     */
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    /**
-     * @return the disease
-     */
-    public String getDiseaseName() {
-        return diseaseName;
-    }
-
-    /**
-     * @param disease the disease to set
-     */
-    public void setDisease(String disease) {
-        this.diseaseName = diseaseName;
-    }
 }
