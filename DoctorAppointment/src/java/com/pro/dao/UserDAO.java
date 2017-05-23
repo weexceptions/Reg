@@ -5,7 +5,7 @@
  */
 package com.pro.dao;
 
-import com.pro.Model.User;
+import com.pro.model.User;
 /**
  *
  * @author Akshay

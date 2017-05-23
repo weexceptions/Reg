@@ -6,11 +6,11 @@
     </servlet>
     <servlet>
         <servlet-name>CreateUser</servlet-name>
-        <servlet-class>com.pro.Controller.CreateUser</servlet-class>
+        <servlet-class>com.pro.controller.CreateUser</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LoginSevelet</servlet-name>
-        <servlet-class>com.pro.Controller.Login</servlet-class>
+        <servlet-class>com.pro.controller.Login</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MakeAppointment</servlet-name>
